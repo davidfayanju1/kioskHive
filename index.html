@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- slick -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Kioskhive</title>
+</head>
+<body>
+
+    <header>
+        <div class="nav-header">
+            <a href="#" class="navbar-brand font-weight-bold">
+                <img src="images/brand-logo.jpg ">
+            </a>
+
+            <div class="navbar-hamburger">
+                <i class="fas fa-bars" id="icon-burger"></i>
+                <i class="fas fa-times" id="icon-cancel"></i>
+            </div>
+
+            <div class="nav-btn">
+                <button>Sign up</button>
+            </div>
+        </div>   
+        <nav class="nav-active">
+
+        
+            <div class="nav-flex">
+                <div class="sidebar-content">
+                    <div class="sidebar-brand">
+                        <img src="images/brand-logo.jpg" alt="">
+                    </div>
+                    <div class="nav-btn mobile">
+                        <button>Sign up</button>
+                        <button>Sign in</button>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropdown-button btn-desktop">
+                        <div class="drop-btn">Fashion</div>
+                    </div>
+                    
+                    <input type="checkbox" id="showMegaOne">
+                    <label class="drop-btn" for="showMegaOne">Fashion</label>
+                    
+                    <div class="dropdown-content">
+                        <a href="#">Men</a>
+                        <a href="#">Women</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropdown-button btn-desktop">
+                        <div class="drop-btn">Home & Decor</div>
+                    </div>
+
+                    <input type="checkbox" id="showMegaTwo">
+                    <label class="drop-btn" for="showMegaTwo">Home & Decor</label>
+
+
+                    <div class="dropdown-content" id="dropdown-content">
+                        <a href="#">Laptops</a>
+                        <a href="#">Phones</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropdown-button btn-desktop">
+                        <div class="drop-btn">Health & Well being</div>
+                    </div>
+
+                    <input type="checkbox" id="showMegaThree">
+                    <label class="drop-btn" for="showMegaThree">Health & Well being</label>
+
+
+                    <div class="dropdown-content" id="dropdown-content-2">
+                        <a href="#">Laptops</a>
+                        <a href="#">Phones</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropdown-button btn-desktop">
+                        <div class="drop-btn">Paper & Novelty</div>
+                    </div>
+
+                    <input type="checkbox" id="showMegaFour">
+                    <label class="drop-btn" for="showMegaFour">Paper & Novelty</label>
+
+                    
+                    <div class="dropdown-content" id="dropdown-content-3">
+                        <a href="#">Laptops</a>
+                        <a href="#">Phones</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropdown-button btn-desktop">
+                        <div class="drop-btn">Food</div>
+                    </div>
+
+                    <input type="checkbox" id="showMegaFive">
+                    <label class="drop-btn" for="showMegaFive">Food</label>
+
+
+                    <div class="dropdown-content" id="dropdown-content-4">
+                        <a href="#">Laptops</a>
+                        <a href="#">Phones</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropdown-button btn-desktop">
+                        <div class="drop-btn">Household & Cleaning</div>
+                    </div>
+
+                    <input type="checkbox" id="showMegaSix">
+                    <label class="drop-btn" for="showMegaSix">Household & Cleaning</label>
+
+
+                    <div class="dropdown-content" id="dropdown-content-5">
+                        <a href="#">Laptops</a>
+                        <a href="#">Phones</a>
+                    </div>
+                </div>
+            </div>
+        </nav>    
+    </header>
+
+    <section class="first-section">
+        <div class="first-article">
+            <h1>Bring your product online</h1>
+            <p>Create a Ecommerce space to help you find the right customer for your product.</p>
+            <div class="button-flex">
+                <button class="sell">Sell on Kioskhive</button>
+                <button class="shop">Shop on Kioskhive</button>
+            </div>
+        </div>
+
+        <div class="shopping-image">
+            <img src="images/header.jpg" alt="cart">
+        </div>
+    </section>
+    <div class="scroll-icon">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <!-- big section -->
+
+    <section class="long-section">
+        <div class="long-section-header">
+            <img src="images/wave-icon-2.png" alt="wave">
+            <h1>The Flexibility of Kioskhive in 3 steps</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique accusantium nostrum magni impedit nesciunt, est nam sit minima esse a?</p>
+        </div>
+
+
+        <!-- card section -->
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fad fa-chart-pie-alt"></i>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">
+                        <h2>Build an intuitive store</h2>
+                    </div>
+
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste veritatis quibusdam consectetur quaerat quisquam minima vero. Hic accusantium possimus animi?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-file-chart-line"></i>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">
+                        <h2>Build a profitable business</h2>
+                    </div>
+
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste veritatis quibusdam consectetur quaerat quisquam minima vero. Hic accusantium possimus animi?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">
+                        <h2>Locate the right customers</h2>
+                    </div>
+
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste veritatis quibusdam consectetur quaerat quisquam minima vero. Hic accusantium possimus animi?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- word section -->
+
+        <div class="words">
+            <h1>More about Kioskhive</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dignissimos culpa ad fugit aperiam rem, sed perferendis?</p>
+        </div>
+
+        <!-- second card section -->
+
+        <div class="product-card-flex">
+            <div class="product-card">
+                <div class="product-card-header">
+                    <img src="images/market.jpeg" alt="market">
+                </div>
+                <div class="product-card-body">
+                    <h2>Register as a manufacturer</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, culpa nesciunt quod doloremque ullam et!</p>
+                    <button>As A Manufacturer</button>
+                </div>
+            </div>
+
+            <div class="product-text">
+                <h2>Product listing that reaches the customers</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio, et reprehenderit suscipit cupiditate nihil ut qui?</p>
+            </div>
+        </div>
+
+        <div class="product-card-flex">
+            <div class="product-text" id="product-text">
+                <h2>Locate the right customers</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio, et reprehenderit suscipit cupiditate nihil ut qui?</p>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card-header">
+                    <img src="images/market-2.jpg" alt="market">
+                </div>
+                <div class="product-card-body">
+                    <h2>Register as a retailer</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, culpa nesciunt quod doloremque ullam et!</p>
+                    <button>As A Retailer</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- waiting list -->
+        <div class="waiting-list">
+            <div class="waiting-list-card">
+                <img src="images/market.jpeg">
+
+                <div class="form">
+                    <h2>Sign Up for waiting list</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias eveniet harum iusto laudantium animi sed doloribus mollitia?</p>
+                    <form>
+                        <div>
+                            <input type="text" placeholder="Enter Email address">
+                            <p>@</p>
+                        </div>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- testimonial -->
+
+        <div class="testimonial">
+            <div class="testimonial-header">
+                <h1>Testimonials</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sit ea voluptatem, sequi ad error vitae perspiciatis illum expedita deserunt!</p>
+            </div>
+        </div>
+
+        <!-- slick slider -->
+        <div class="slick-section">
+            <div id="slick">
+                <div>
+                    <div class="testimonial-card">
+                        <img src="images/market-2.jpg" alt="">
+                        <div class="testimonial-card-body">
+                            <h1>Adebiyi, Fasasi</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, libero nam doloremque illum quos qui.</p>
+                            <p>CEO, <b>Aramco Found</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="testimonial-card">
+                        <img src="images/market.jpeg" alt="">
+                        <div class="testimonial-card-body">
+                            <h1>David Teo</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, libero nam doloremque illum quos qui.</p>
+                            <p>CEO, <b>Instavlog</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="testimonial-card">
+                        <img src="images/market-2.jpg" alt="">
+                        <div class="testimonial-card-body">
+                            <h1>Malik</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, libero nam doloremque illum quos qui.</p>
+                            <p>CEO, <b>Kioskhive</b></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer-overlay">
+            <div class="footer-flex">
+                <div class="footer-first-section">
+                    <img src="images/brand-logo.jpg" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, sunt! Vel error quidem nisi eaque, ea dolore alias suscipit est?</p>
+                </div>
+                <div class="footer-second-section">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-socials">
+                    <p>Social Media Links</p>
+                    <a href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                    <a href="https://web.facebook.com/campaign/landing.php?&campaign_id=1652975230&extra_1=s%7Cc%7C318263901759%7Ce%7Cfacebook%27%7C&placement&creative=318263901759&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1652975230%26adgroupid%3D71931260548%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D1010283%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQiAweaNBhDEARIsAJ5hwbdl43i45VePga_dEsadNQUuJnOHj88kjUSX7IkwrzvqX16gEHN8BdYaAhEwEALw_wcB&_rdc=1&_rdr">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright-text">
+                <p>Lorem ipsum dolor sit amet. Copyright 2021 &copy;</p>
+            </div>
+        </div>        
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+    <script src="script.js">
+    </script>
+</body>
+</html>

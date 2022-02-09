@@ -24,7 +24,7 @@ header {
 }
 
 nav {
-  width: 80%;
+  /* width: 80%; */
   position: absolute;
   background-color: rgb(214, 214, 214);
   top: 100%;
@@ -49,6 +49,7 @@ nav {
 .nav-flex .dropdown {
   margin-left: 1.5rem;
 }
+
 .dropdown {
   cursor: pointer;
   color: white;
@@ -67,12 +68,26 @@ nav {
   background-color: rgb(207, 205, 205);
   height: 100vh;
   width: 100vw;
-  padding: 0.5rem 2rem;  
+  padding: 0.5rem 2rem;
+  overflow-y: auto;
+}
+
+.column {
+  display: flex;
+}
+
+.row {
+  margin-left: 2rem;
+}
+
+.column .row ul li {
+  list-style: none;
 }
 
 .dropdown-content a {
   text-decoration: none;
   display: block;
+  color: rgb(71, 70, 70);
 }
 
 .drop-btn {
@@ -92,7 +107,6 @@ nav {
   width: 100%;
 }
 
-
 .nav-btn button {
   background-color: transparent;
   border: 1px #33bca1 solid;
@@ -110,37 +124,38 @@ nav {
   transition: all 0.45s ease-in-out;
 }
 
-.mobile{
+.mobile {
   display: none !important;
 }
 
-.sidebar-content{
+.sidebar-content {
   display: none;
 }
 
 /* first section */
 
 .first-section {
-  margin-top: 4.8rem;
-  display: flex;
+  margin-top: 5.8rem;
   width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3rem 5rem;
+  height: 70vh;
+  position: relative;
 }
 
 .first-article {
   width: 50%;
+  z-index: 100;
+  margin: 4rem 0rem 0rem 5rem;
 }
 
 .first-article h1 {
-  color: navy;
+  color: rgb(27, 27, 202);
   font-size: 3rem;
   margin-bottom: 1.5rem;
 }
 
 .first-article p {
   margin-bottom: 2rem;
+  color: #fff;
 }
 
 /* button */
@@ -178,13 +193,23 @@ nav {
 }
 
 .shopping-image {
-  margin-left: 5rem;
+  background: url("images/header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.shopping-image img {
-  width: 19rem;
-  height: 23rem !important;
-  object-fit: cover;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
 }
 
 /* scroll */
@@ -335,8 +360,14 @@ nav {
   padding: 0.8rem 1rem;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
+.product-card-body button:hover {
+  background-color: #26ac91;
+  transition: all 0.5s ease-in-out;
+}
 .product-text {
   width: 50%;
 }
@@ -565,14 +596,13 @@ footer {
 }
 
 /* inputs & label*/
-input[type="checkbox"], label {
+input[type="checkbox"],
+label {
   display: none;
 }
 
-
 @media screen and (max-width: 972px) {
-
-  label{
+  label {
     display: block;
   }
 
@@ -580,12 +610,11 @@ input[type="checkbox"], label {
     display: none;
   }
 
-  .mobile{
+  .mobile {
     display: block !important;
-    
   }
 
-  .mobile button{
+  .mobile button {
     width: 48.5%;
     display: inline;
     padding: 0.3rem 1rem;
@@ -615,6 +644,7 @@ input[type="checkbox"], label {
     transition: transform 0.45s ease;
     transform-origin: left;
     height: 100vh;
+    overflow-y: scroll;
   }
 
   .nav-active {
@@ -626,6 +656,7 @@ input[type="checkbox"], label {
     width: 60%;
     left: 0%;
     height: 100vh;
+    overflow-y: scroll;
   }
 
   .nav-flex {
@@ -637,48 +668,42 @@ input[type="checkbox"], label {
     margin-left: 0rem !important;
   }
 
-  
-
-  /* nav {
-    padding: 1rem 2rem;
-  } */
-
   .dropdown {
     width: 100%;
     margin-bottom: 1rem;
   }
 
-  .drop-btn{
+  .drop-btn {
     padding: 0.4rem 2rem;
     width: 100%;
     display: block;
   }
 
-  #showMegaOne:checked ~ .dropdown-content{
+  #showMegaOne:checked ~ .dropdown-content {
     display: block;
   }
 
-  #showMegaTwo:checked ~ .dropdown-content{
+  #showMegaTwo:checked ~ .dropdown-content {
     display: block;
   }
 
-  #showMegaThree:checked ~ .dropdown-content{
+  #showMegaThree:checked ~ .dropdown-content {
     display: block;
   }
 
-  #showMegaFour:checked ~ .dropdown-content{
+  #showMegaFour:checked ~ .dropdown-content {
     display: block;
   }
 
-  #showMegaFive:checked ~ .dropdown-content{
+  #showMegaFive:checked ~ .dropdown-content {
     display: block;
   }
 
-  #showMegaSix:checked ~ .dropdown-content{
+  #showMegaSix:checked ~ .dropdown-content {
     display: block;
   }
 
-  input{
+  input {
     display: none;
   }
 
@@ -687,21 +712,16 @@ input[type="checkbox"], label {
   }
 
   .dropdown:hover .dropdown-content {
-      display: none;
+    display: none;
   }
-  
 
   .dropdown-content {
-    /* position: absolute !important; */
-    position: static;
-    top: 55%;
+    position: static !important;
     width: 100%;
-    padding: 0rem 2rem;
-    left: -20%;
-    overflow-y: auto;
+    padding: 1rem 2rem;
   }
 
-  .sidebar-content{
+  .sidebar-content {
     background-color: white;
     display: block;
     margin-bottom: 2rem;
@@ -709,15 +729,22 @@ input[type="checkbox"], label {
     padding: 1rem 2rem;
   }
 
-  .sidebar-brand img{
+  .sidebar-brand img {
     width: 80%;
   }
 
   .btn-desktop {
     display: none;
   }
-}
 
+  .column {
+    flex-direction: column;
+  }
+
+  .row {
+    margin-left: 2rem;
+  }
+}
 
 @media screen and (max-width: 997px) {
   .form {
@@ -732,6 +759,11 @@ input[type="checkbox"], label {
     width: 100%;
   }
 
+  form div input {
+    display: block;
+    width: 90%;
+  }
+
   form button {
     margin-left: 0rem;
     width: 100%;
@@ -742,15 +774,18 @@ input[type="checkbox"], label {
 @media screen and (max-width: 768px) {
   /* first section */
 
-  .first-section {
-    flex-direction: column-reverse;
-    padding: 3rem 2rem !important;
-    justify-content: center;
+  .first-article {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: 4rem 0rem 0rem 0rem !important;
   }
 
-  .first-article {
-    width: 100%;
+  .first-article button {
+    width: 5rem !important;
   }
 
   .first-article h1 {
@@ -765,22 +800,18 @@ input[type="checkbox"], label {
     margin-bottom: 4rem;
   }
 
-  .shopping-image img {
-    width: 80%;
-  }
-
   .button-flex {
-    flex-direction: column;
-    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
   .button-flex .sell {
     width: 100%;
   }
   .button-flex .shop {
-    margin-top: 1rem;
     width: 100%;
-    margin-left: 0rem !important;
+    margin-left: 2rem !important;
   }
 
   /* long section */

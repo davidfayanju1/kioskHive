@@ -77,7 +77,7 @@ nav {
 }
 
 .row {
-  margin-left: 0rem !important;
+  margin-left: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -89,6 +89,7 @@ nav {
   text-decoration: none;
   display: block;
   color: rgb(71, 70, 70);
+  font-size: 1rem;
 }
 
 .drop-btn {
@@ -759,6 +760,7 @@ label {
   }
 
   .row {
+    margin-left: 0rem !important;
     margin-bottom: 2rem;
   }
 }

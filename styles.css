@@ -153,9 +153,11 @@ nav {
   margin-bottom: 1.5rem;
 }
 
-.first-article p {
-  margin-bottom: 2rem;
+.first-article h2 {
   color: #fff;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  /* font-weight: lighter; */
 }
 
 /* button */
@@ -293,6 +295,7 @@ nav {
   border: 1px solid #33bca1;
   box-shadow: 2px 2px 10px 1px rgb(226, 223, 223);
   transition: all 0.45s ease-out;
+  /* cursor: pointer; */
 }
 
 .card-header {
@@ -301,7 +304,7 @@ nav {
 }
 
 .card-body .card-title {
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -327,6 +330,10 @@ nav {
   min-width: 41rem;
 }
 
+.words p a {
+  color: grey;
+}
+
 /* second card */
 
 .product-card-flex {
@@ -346,7 +353,8 @@ nav {
 .product-card-header img {
   width: 100%;
   object-fit: cover;
-  border-radius: inherit;
+  display: block;
+  /* border-radius: 100px; */
 }
 
 .product-card-body {
@@ -361,7 +369,10 @@ nav {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 14.5rem;
   transition: all 0.5s ease-in-out;
+  font-size: 100%;
+  max-width: 90%;
 }
 
 .product-card-body button:hover {
@@ -372,6 +383,10 @@ nav {
   width: 50%;
 }
 
+#product-text button {
+  font-size: 100%;
+}
+
 /* waiting list */
 
 .waiting-list {
@@ -379,6 +394,7 @@ nav {
   background-color: white;
   width: 100%;
   border-radius: 6px;
+  /* min-height: 70rem; */
 }
 
 .waiting-list-card {
@@ -860,7 +876,7 @@ label {
   }
 
   .product-card {
-    width: 90%;
+    width: 100%;
   }
 
   .product-text {

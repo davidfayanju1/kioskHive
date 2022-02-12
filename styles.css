@@ -763,6 +763,19 @@ label {
     margin-left: 0rem !important;
     margin-bottom: 2rem;
   }
+
+  .row::after {
+    content: "";
+    display: block;
+    background-color: darkgray;
+    height: 0.01rem;
+    width: 100%;
+    margin: 1rem 0rem;
+  }
+
+  #men-section .row:last-child::after {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 997px) {

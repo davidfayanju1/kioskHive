@@ -633,10 +633,10 @@ label {
   }
 
   .mobile button {
-    width: 48.5%;
-    display: inline;
+    width: 100%;
+    display: block;
     padding: 0.3rem 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 0.75rem;
   }
 
@@ -736,7 +736,12 @@ label {
   .dropdown-content {
     position: static !important;
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 3rem 2rem !important;
+    height: auto;
+  }
+
+  .dropdown-content a{
+    line-height: 2.0; 
   }
 
   .sidebar-content {

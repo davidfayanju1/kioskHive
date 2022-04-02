@@ -414,6 +414,14 @@ nav {
   padding: 2rem;
 }
 
+.product-text p {
+  color:rgb(151, 146, 146)
+}
+
+.product-card-body p {
+  color: rgb(151, 146, 146)
+}
+
 .product-card-body button {
   margin-top: 2rem;
   background-color: #33bca1;
@@ -978,6 +986,7 @@ label {
     width: 90%;
   }
 
+
   #product-text {
     margin-top: 0rem !important;
     margin-bottom: 2.5rem;
@@ -1013,6 +1022,10 @@ label {
 
   .testimonial-header h1 {
     font-size: 2.5rem;
+  }
+
+  .testimonial-header p{
+    min-width: 22.6rem;
   }
 
   .footer-flex {

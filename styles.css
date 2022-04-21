@@ -321,7 +321,7 @@ nav {
   /* text-overflow: clip; */
 }
 .long-section-header img {
-  width: 30%;
+  width: 20%;
 }
 
 /* card section */
@@ -1008,11 +1008,11 @@ label {
   }
 
   /* testimonial card */
-
   #slick div {
     width: 100%;
     height: 24rem;
   }
+
   .testimonial-card {
     border-radius: 20px !important;
     width: 20rem !important;

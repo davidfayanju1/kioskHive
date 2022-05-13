@@ -380,7 +380,7 @@ nav {
   max-width: 40%;
   margin: 0 auto;
   color: grey;
-  min-width: 41rem;
+  min-width: 41rem
 }
 
 .words p a {
@@ -984,7 +984,7 @@ label {
 
   .words p {
     width: 100%;
-    min-width: 26rem;
+    min-width: 24rem;
   }
 
   /* second card */
@@ -1057,7 +1057,7 @@ label {
   }
 
   .testimonial-header p{
-    min-width: 26rem;
+    min-width: 24rem;
   }
 
   .footer-flex {

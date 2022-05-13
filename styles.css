@@ -401,6 +401,7 @@ nav {
   background-color: white;
   width: 40%;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .product-card-header img {
@@ -452,24 +453,32 @@ nav {
 
 .waiting-list {
   margin-top: 10rem;
-  background-color: white;
   width: 100%;
-  border-radius: 6px;
-  /* min-height: 70rem; */
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .waiting-list-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 20rem;
-  min-height: 18rem;
+  height: 70vh;
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: white;
 }
 
-.waiting-list-card img {
+.waiting-list-card-image{
   width: 50%;
   height: 100%;
-  display: block;
+}
+
+.waiting-list-card-image img {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -521,13 +530,20 @@ form div p {
 form button {
   background-color: #33bca1;
   border: none;
-  padding: 1.1rem 1.5rem;
   color: white;
   border-radius: 4px;
-  font-weight: 700;
   margin-left: 1.2rem;
   width: 30%;
   min-width: 6rem;
+  font-size: 18px;
+  padding: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.4s ease-in-out;
+}
+
+form button:hover {
+  background-color: #26ac91;
 }
 
 /* testimonial */
@@ -968,13 +984,17 @@ label {
 
   .words p {
     width: 100%;
-    min-width: 22rem;
+    min-width: 26rem;
   }
 
   /* second card */
 
   .product-card-flex {
     flex-direction: column;
+  }
+
+  .product-text {
+    width: 100% !important;
   }
 
   .product-card {
@@ -993,18 +1013,30 @@ label {
   }
 
   .waiting-list {
-    min-height: 40rem;
-  }
-  .waiting-list-card {
-    flex-direction: column;
+    min-height: 97vh;
   }
 
-  .waiting-list-card img {
+  .waiting-list-card {
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+  }
+
+  .waiting-list-card-image {
+    width: 100%;
+  }
+
+  .waiting-list-card-image img {
     width: 100%;
   }
 
   .form {
-    width: 100%;
+    width: 100% !important;
+    height: 100%;
+  }
+
+  form button {
+    height: 3.3rem !important; 
   }
 
   /* testimonial card */
@@ -1025,7 +1057,7 @@ label {
   }
 
   .testimonial-header p{
-    min-width: 22.6rem;
+    min-width: 26rem;
   }
 
   .footer-flex {

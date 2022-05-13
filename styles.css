@@ -984,7 +984,8 @@ label {
 
   .words p {
     width: 100%;
-    min-width: 24rem;
+    min-width: 20rem;
+    Text-align: center;
   }
 
   /* second card */
@@ -1057,7 +1058,8 @@ label {
   }
 
   .testimonial-header p{
-    min-width: 24rem;
+    min-width: 20rem;
+    text-align: center; 
   }
 
   .footer-flex {

@@ -79,7 +79,6 @@ nav {
   align-items: center;
   width: 50%;
   height: 2.5rem;
-  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -113,6 +112,7 @@ nav {
   border: grey 1px solid;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
+  font-size: 16px;
 }
 
 .search-filter input:focus {
@@ -572,9 +572,9 @@ form button:hover {
 .testimonial-header p {
   color: grey;
   max-width: 65%;
-  min-width: 15rem;
+  min-width: 20rem;
   margin: 0 auto;
-  text-overflow: clip;
+  /* text-overflow: clip; */
 }
 
 /* slick section */

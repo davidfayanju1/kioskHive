@@ -1,4 +1,4 @@
-const hamburger = document.querySelector(".navbar-hamburger");
+let hamburger = document.querySelector(".navbar-hamburger");
 const nav = document.querySelector("nav");
 const iconShow = document.querySelector("#icon-burger");
 const iconCancel = document.querySelector("#icon-cancel");
@@ -65,3 +65,48 @@ scroll.addEventListener('click', () => {
     behavior: 'smooth'
   })
 })
+
+// search filter toggle 
+
+const searchInput = document.querySelector('.search-filter');
+const searchToggle = document.querySelector('.background');
+burger = document.querySelector('.navbar-hamburger');
+const navLogo = document.querySelector('.navbar-brand');
+const navReset = document.querySelector('.search-cancel');
+const searchContainer = document.querySelector('.search-input')
+
+searchToggle.addEventListener('click', () => {
+
+    burger.classList.add('d-none');
+
+    navLogo.classList.add('d-none');
+
+    navReset.classList.remove('d-none');
+
+    navReset.classList.add('d-block');
+
+    searchInput.style.display = 'block';
+
+    searchContainer.classList.add('full-length');
+
+    searchToggle.classList.remove('radius');
+
+})
+
+navReset.addEventListener('click', () => {
+
+  burger.classList.remove('d-none');
+
+  navLogo.classList.remove('d-none');
+
+  navReset.classList.remove('d-block');
+
+  navReset.classList.add('d-none');
+
+  searchInput.style.display = 'none';
+
+  searchToggle.classList.add('radius');
+
+})
+
+

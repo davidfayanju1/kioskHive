@@ -387,11 +387,7 @@ nav {
   max-width: 40%;
   margin: 0 auto;
   color: grey;
-<<<<<<< HEAD
   min-width: 19.5rem;
-=======
-  min-width: 41rem
->>>>>>> d4a9b4d1f7f9aee123e441f4c873d0baf72eb2ff
 }
 
 .words p a {
@@ -1038,17 +1034,7 @@ label {
 
   .words h1 {
     font-size: 1.9rem;
-  }
-
-  /* .words p {
-    width: 100%;
-    min-width: 20rem;
-<<<<<<< HEAD
-  } */ 
-=======
-    Text-align: center;
-  }
->>>>>>> d4a9b4d1f7f9aee123e441f4c873d0baf72eb2ff
+  } 
 
   /* second card */
 
@@ -1126,16 +1112,6 @@ label {
   .testimonial-header h1 {
     font-size: 2.5rem;
   }
-
-<<<<<<< HEAD
-  /* .testimonial-header p{
-    min-width: 20rem;
-  } */
-=======
-  .testimonial-header p{
-    min-width: 20rem; 
-  }
->>>>>>> d4a9b4d1f7f9aee123e441f4c873d0baf72eb2ff
 
   .footer-flex {
     flex-direction: column;

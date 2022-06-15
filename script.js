@@ -39,6 +39,22 @@ $(document).ready(() => {
           centerMode: false,
           arrows: true
         }
+      },
+      {
+        breakpoint: 920,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+          arrows: true
+        }
+      },
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false,
+          arrows: true
+        }
       }
     ]
   })
